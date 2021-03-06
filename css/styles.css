@@ -1,0 +1,39 @@
+.cont {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+#titulo {
+    color:white;
+    font-size: 45px;
+    font-family: "Catamaran", sans-serif;
+    margin-top: 110px;
+}
+
+#bgturma {
+    width: 15%;
+    border:solid 1px;
+    z-index:-1;
+    position:fixed;
+    justify-content: center;
+    
+}
+
+#turma {
+    padding:10px 40px;
+    
+}
+
+.contI {
+    padding:20px 150px;
+    
+}
+
+#bg {
+    z-index:-1;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top:0px;
+}
