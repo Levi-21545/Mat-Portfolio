@@ -6,15 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio - 2º Ciclo</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <p align=center>CONTEÚDO 2</p>
-    <hr />
 
-    <div align="center">
-        <a href="index.html">Voltar</a>
+    <div class="container-fluid p-0">
+        <div class="row mt-5">
+            <div class="container">
+                <div class="col mx-auto text-center">
+                    <h2 class="titulo py-3 mt-4">FUNÇÕES EXPONENCIAIS E LOGARÍTMICAS</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mx-auto text-center center">
+                <div class="container">
+                    <p id="turma" class="bg-white px-2">SEMANA 3</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <br>
+    <!--O QUE É FUNC EXP??!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>O QUE SÃO FUNÇÕES EXPONENCIAIS?</h3>
+
+                    <p>As Funções Exponenciais são funções no qual a variável X está presente na forma de expoente para uma determinada base. Podemos chamar de Função Exponencial de base <i>a</i> a função f de ℝ em ℝ que associa a cada x real o númeral real <i>a<sup>x</sup></i>, sendo a>0 e a≠1.</p>
+                    <center>
+                        <p>f: ℝ → ℝ<br>f(x) = a<sup>x</sup></p>
+                    </center>
+                    <p>Quando falamos de gráfico, para uma função do tipo f(x) = a<sup>x</sup>, a curva que a representa está toda acima do eixo das abcissas, pois a<sup>x</sup> será sempre maior do que zero para todo x. Também podemos lembrar que o eixo das ordenadas sempre será cortado no ponto (0,1) e f(x) = a<sup>x</sup> é crescente se a>1 e decrescente se 1>a>0.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--EQUAÇÕES EXPONENCIAIS!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao2 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>EQUAÇÕES EXPONENCIAIS</h3>
+
+                    <p>Vamos calcular juntos as seguintes equações:</p>
+                    <center>
+                        <p><b>1) 2<sup>x</sup> = 64</b><br>2<sup>x</sup> = 2<sup>6</sup><br><s>2</s><sup>x</sup> = <s>2</s><sup>6</sup><br><b>x = 6</b></p><br>
+                        <p><b>2) 5<sup>x</sup> + 4 = 129</b><br>5<sup>x</sup> = 129 - 4<br>5<sup>x</sup> = 125<br>5<sup>x</sup> = 5<sup>3</sup><br><s>5</s><sup>x</sup> = <s>5</s><sup>3</sup><br><b>x = 3</b></p><br>
+                        <p><b>3) 3<sup>x - 2</sup> . 6 = 54</b><br>3<sup>x - 2</sup> = 54 / 6<br>3<sup>x - 2</sup> = 9<br>3<sup>x - 2</sup> = 3<sup>2</sup><br><s>3</s><sup>x - 2</sup> = <s>3</s><sup>2</sup><br>x - 2 = 2<br><b>x = 4</b></p><br>
+                    </center>
+                    <p><i>"O número de bactérias de uma cultura, t horas após o início de certo experimento, é dado pela expressão N(t) = 2400 . 2<sup>0,4t</sup>. Nestas condições, quanto tempo após o início do experimento a cultura terá 38400 bactérias?"<br></i>Vamos resolver juntos:</p>
+                    <center>
+                        <p><b>38400 = 2400 . 2<sup>0,4t</sup></b><br>2<sup>0,4t</sup> = 16<br>2<sup>0,4t</sup> = 2<sup>4</sup><br><s>2</s><sup>0,4t</sup> = <s>2</s><sup>4 </sup><br>0,4t = 4<br>t = 4 / 0,4<br><b>t = 10 horas</b></p>
+
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--OQ SAO FUNCOES LOGARITMICAS?!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>O QUE SÃO FUNÇÕES LOGARíTMICAS?</h3>
+
+                    <p>O logaritmo surgiu no século XVII com o objetivo inicial de facilitar alguns cálculos, como transformar multiplicação em adição, divisão em subtração e potenciação em multiplicação, através das propriedades. Atualmente, com a tecnologia, essas operações não apresentam mais dificuldades. No entanto, os logaritmos continuam a ser usados como ferramenta muito importante para a resolução de equações exponenciais do tipo que vimos no exemplo de antes, quando não conseguimos igualar e "cortar" as bases. Vejamos como o logaritmo pode nos ajudar:</p>
+                    <center>
+                        <p>Sabemos que <b>4<sup>2</sup> = 16</b><br>Então dizemos que <b>log<sub>4</sub>16 = 2</b><br><i>Lemos isto como: O logaritmo de 16 na base 4 é 2.</i></p>
+                    </center>
+                    <p>Isso signigica que ao utilizarmos um logaritmo, é porque procuramos algum expoente. Outro exemplo:</p>
+                    <center>
+                        <p>Quanto é <b>log<sub>9</sub>81?</b><br>9<sup>x</sup> = 81<br>9<sup>x</sup> = 9<sup>2</sup><br><b>x = 2</b></p>
+                    </center>
+                    <p>Portanto, podemos concluir as seguintes ideias:</p>
+                    <div class="row center">
+                        <ul align="left">
+                            <li>Logaritmo pode se transformar numa equação exponencial;</li>
+                            <li>Logaritmando não pode ser zero nem número negativo;</li>
+                            <li>A base não pode ser zero, nem 1, nem negativa;</li>
+                            <li>Para o cálculo de alguns logaritmos, a transformação em<br>equação exponencial não ajuda, então usaremos outros métodos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PROPRIEDADES DOS LOGARITMOS!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao2 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>PROPRIEDADES DOS LOGARITMOS</h3>
+                    <div class="pb-4">
+                        <table align=center border="2px">
+                            <tr>
+                                <td class="formas2"><b>1ª Propriedade</b></td>
+                                <td class="formas2">Logaritmo de um produto</td>
+                                <td class="formas2">log<sub>a</sub>(M . N) = log<sub>a</sub>M + log<sub>a</sub>N</td>
+                            </tr>
+                            <tr>
+                                <td class="formas2"><b>2ª Propriedade</b></td>
+                                <td class="formas2">Logaritmo de um quociente</td>
+                                <td class="formas2">log<sub>a</sub>(M / N) = log<sub>a</sub>M - log<sub>a</sub>N</td>
+                            </tr>
+                            <tr>
+                                <td class="formas2" rowspan="2"><b>3ª Propriedade</b></td>
+                                <td class="formas2" rowspan="2">Logaritmo de uma potência</td>
+                                <td class="formas2">log<sub>a</sub>M<sup>n</sup> = N . log<sub>a</sub>M</td>
+                            </tr>
+                            <tr>
+                                <td class="formas2">log<sub>a</sub>M<sup>1/N</sup> = (1 / N) . log<sub>a</sub>M</td>
+                            </tr>
+                            <tr>
+                                <td class="formas2"><b>4ª Propriedade</b></td>
+                                <td class="formas2">Mudança de Base<br>(é a mais útil quando usamos calculadoras)</td>
+                                <td class="formas2">log<sub>b</sub>N = (log<sub>a</sub>N) / (log<sub>a</sub>b</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--FUNCOES LOGARITMICAS!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>FUNÇÕES LOGARíTMICAS</h3>
+
+                    <p>Dado um número real a(1 ≠ a > 0), chamamos de função logarítmica de base a a função que associa a cada x o número log<sub>a</sub>x.</p>
+                    <center>
+                        <p>f(x) = log<sub>a</sub>x<br>E as funções f(x) = log<sub>a</sub>x e f(x) = a<sup>x</sup> são inversas uma da outra.</p>
+                    </center>
+                    <p>Sobre o gráfico, podemos afirmar que:</p>
+                    <div class="row center">
+                        <ul align="left">
+                            <li>O gráfico está todo à direita do eixo y;</li>
+                            <li>Corta o eixo das abcissas no ponto (1,0);</li>
+                            <li>A função é crescente se a > 1 e descresente se 1 > a > 0;</li>
+                            <li>É simétrico ao gráfico da função f(x) = a<sup>x</sup> em relação à reta y = x.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="row center text-center">
+        <div class="mt-3 mb-4 mx-4 col-lg-5 col-md-6 col-sm-6">
+            <h2 class="botao "><a href="cont1.html" style="color: white">VOLTAR</a></h2>
+        </div>
+        <div class="mt-3 mx-4 mb-4 col-lg-5 col-md-6 col-sm-6">
+            <h2 class="botao "><a href="cont3.html" style="color: white">PRÓXIMO</a></h2>
+        </div>
+    </div>
+
 </body>
 <footer>
 

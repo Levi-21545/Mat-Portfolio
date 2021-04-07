@@ -6,14 +6,217 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio - 2º Ciclo</title>
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <p align=center>CONTEÚDO 3</p>
-    <hr />
 
-    <div align="center">
-        <a href="index.html">Voltar</a>
+    <div class="container-fluid p-0">
+        <div class="row mt-5">
+            <div class="container">
+                <div class="col mx-auto text-center">
+                    <h2 class="titulo py-3 mt-4">PROGRESSÃO ARITMÉTICA E<br>PROGRESSÃO GEOMÉTRICA</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mx-auto text-center center">
+                <div class="container">
+                    <p id="turma" class="bg-white px-2">SEMANA 5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--O QEU SAO SEQUENCIAS!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>ENTENDENDO AS SEQUÊNCIAS</h3>
+
+                    <p>Sequências numéricas são sucessões de números que seguem um padrão específico. Elas podem ser finitas ou infinitas. Matematicamente é possível abordar aquelas em que se pode identificar o padrão de progressão e prever os valores de todas as posições. Olhe os exemplos abaixo:</p>
+                    <center>
+                        <p><b>1)</b> 0, 4, 8, 12, 16, 20, 24, 28...<br><i>Regra: Adicionando 4 ao valor anterior.</i></p>
+                        <p><b>2)</b> 3, 8, 13, 18, 23, 28, 33, 38...<br><i>Regra: Adicionando 5 ao valor anterior.</i></p>
+                        <p><b>3)</b> 1, 6, 36, 216, 1.296, 7.776, 46.656...<br><i>Regra: Inicia no 1 e multiplica por 6 os termos seguintes.</i></p>
+                    </center>
+                    <p>Uma sequência pode ser uma função que associa a cada elemento n ∈ ℕ* um único elemento a<sub>n</sub> e ∈ ℝ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--LEIS DE FORMAçÃO-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao2 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>LEI DE FORMAÇÃO</h3>
+
+                    <p>Existem três formas de estabelecer suas formações:</p>
+                    <ul>
+                        <li><b>Por fórmula de recorrência</b>
+                            <p class="lista">São dadas duas regras: uma para identificar o primeiro termo (a<sub>1</sub>) e outra para calcular cada termo (a<sub>n</sub>) a partir de seu antecedente (a<sub>n-1</sub>)</p>
+                            <center>
+                                <p class="lista">6 primeiros termos da sequência definida por:<br>(a<sub>1</sub> = 2 | a<sub>n</sub> = a<sub>n-1</sub> + 3, n ≥ 1)<br><b><span style="font-size: 110%">2, 5, 8, 11, 14, 17...</span></b></p>
+                                <p class="lista">6 primeiros termos da sequência definida por:<br>(a<sub>1</sub> = 1 | a<sub>n</sub> = a<sub>n-1</sub> . 3, n ≥ 1)<br><b><span style="font-size: 110%">1, 3, 9, 27, 81, 243...</span></b></p>
+                            </center>
+                            <p class="lista">Podemos também estabelecer a fórmula a partir de uma sequência dada.</p>
+                            <center>
+                                <p class="lista">0, 2, 4, 6, 8, 10...<br><b><span style="font-size: 110%">(a<sub>1</sub> = 0 | a<sub>n</sub> = a<sub>n-1</sub> + 2)</span></b></p>
+                                <p class="lista">2, 6, 18, 54, 162...<br><b><span style="font-size: 110%">(a<sub>1</sub> = 2 | a<sub>n</sub> = a<sub>n-1</sub> . 3)</span></b></p>
+                            </center>
+                        </li>
+                        <li><b>Expressando cada termo um função da sua posição n.</b><br>
+                            <p class="lista">É estabelecida uma fórmula que expressa a<sub>n</sub> em função de n. Chamamos essa fórmula de <b>Termo Geral</b>.<br>Vamos escrever os 6 primeiros termos da sequência infinita cujo termo geral é dado por <b>a<sub>n</sub> = 3n + 1, n ∈ ℕ*.</b></p>
+                            <center>
+                                <p class="lista">n = 1 | a<sub>1</sub> = <b>4</b><br>n = 2 | a<sub>2</sub> = <b>7</b><br>n = 3 | a<sub>3</sub> = <b>10</b><br>n = 4 | a<sub>4</sub> = <b>13</b><br>n = 5 | a<sub>5</sub> = <b>16</b><br>n = 6 | a<sub>6</sub> = <b>19</b><br></p>
+                            </center>
+                        </li>
+                        <li><b>Por propriedade dos termos</b><br>
+                            <p class="lista">É informada a propriedade que os termos da sequência devem apresentar.</p>
+                            <center>
+                                <p class="lista">6 primeiros termos da sequência infinita formada pelos números primeors positivos em ordem crescente.<br><b>(2, 3, 5, 7, 11, 13...)</b><br><i><span style="font-size: 90%">Apesar de não existir nenhuma função ou regra para definir a sequência.</span></i></p>
+                            </center>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PROGRESSAO ARITMETICA!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>PROGRESSÃO ARITMÉTICA</h3>
+
+                    <p>Chama-se Progressão Aritmética (PA) a sequência de números em que cada termo, a partir do segundo, é a soma do anterior com uma constante r. São exemplos de PAs:</p>
+                    <center>
+                        <p><b>1)</b> 1, 3, 5, 7, 9...<br><i>a<sub>1</sub> = 1 e r = 2</i></p>
+                        <p><b>2)</b> 0, -2, -4, -6, -8...<br><i>a<sub>1</sub> = 0 e r = -2</i></p>
+                        <p><b>3)</b> 4, 4, 4, 4, 4...<br><i>a<sub>1</sub> = 4 e r = 0</i></p>
+                    </center>
+                    <p><b>Crescente</b>: cada termo é maior que o anterior, ou seja, r > 0.<br><b>Decrescente</b>: cada termo é menor que o anterior, ou seja, 0 > r.<br><b>Constante</b>: cada termo é igual ao anterior, ou seja, r = 0.</p>
+                    <p>Numa PA de razão r, o enésimo termo é dado por:<br></p>
+                    <center>
+                        <p>a<sub>1</sub><br>a<sub>2</sub> = a<sub>1</sub> + r<br>a<sub>3</sub> = a<sub>2</sub> + r | a<sub>1</sub> + r + r | a<sub>1</sub> + 2r<br>a<sub>4</sub> = a<sub>3</sub> + r | a<sub>1</sub> + 2r + r | a<sub>1</sub> + 3r<br>...<br><span style="font-size: 110%"><b>a<sub>n</sub> = a<sub>1</sub> + (n - 1)r</b></span></p>
+                    </center>
+                    <p>Às vezes é mais adequado indicar o primeiro termo da PA como a<sub>0</sub>, deixando o termo geral como a<sub>n</sub> = a<sub>0</sub> + nr. Perceba que a<sub>9</sub> = a<sub>6</sub> + 3r, pois para ir de a<sub>6</sub> para a<sub>9</sub> nós avançamos 3 posições. Da mesma forma para retroceder posições, utilizando valores negativos multiplicando a razão.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--INTERPOLAÇÃO ARITMÉTICA!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao2 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>INTERPOLAÇÃO ARITMÉTICA</h3>
+
+                    <p>Nas sequências finitas (a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub>) os termos a<sub>1</sub> e a<sub>n</sub> são chamados de <b>extremos</b> e os demais termos entre eles são chamados de <b>meios</b>. Interpolar, intercalar, inserir k meios aritméticos entre dois números a e b, significa obter uma PA de extremos a e b com n = k + 2 termos. Para encontrar esses termos temos que encontrar a razão. Vamos interpolar 5 meios aritméticos entre 3 e 6:</p>
+                    <center>
+                        <p>n = k + 2<br> n = 5 + 2 = 7</p>
+                        <p>a<sub>n</sub> = a<sub>1</sub> + (n - 1)r<br>6 = 3 + (7 - 1)r<br>6 = 3 + 6r<br>3 = 6r<br><b>r = 0,5</b></p>
+                        <p>PA: (3, <b>3,5, 4, 4,5, 5, 5,5</b>, 6)</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SOMA DOS TERMOS DE UMA PA FINITA!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>SOMA DOS TERMOS DE UMA PA</h3>
+
+                    <p>É possível somarmos todos os termos de uma PA finita sem somarmos um a um dos termos. Para isso, podemos utilizar da fórmula:</p>
+                    <center>
+                        <p><b>S<sub>n</sub> = ( (a<sub>1</sub> + a<sub>n</sub>)n ) / 2</b></p>
+                    </center>
+                    <p>Calculando a soma dos 25 termos iniciais da PA (1, 7, 13...):</p>
+                    <center>
+                        <p><i>Descobrindo o 25º termo da PA usando a fórmula do termo geral:</i><br>a<sub>n</sub> = a<sub>1</sub> + (n - 1)r<br>a<sub>25</sub> = 1 + (25 - 1)6<br>a<sub>25</sub> = 1 + 24 . 6<br>a<sub>25</sub> = 145</p>
+                        <p><i>Agora sim podemos utilizar da fórmula da soma:</i><br>S<sub>n</sub> = ( (a<sub>1</sub> + a<sub>n</sub>)n )/2<br>S<sub>25</sub> = ( (1 + 145) . 25 ) / 2 = 1.825</p>
+                    </center>
+                    <p>Às vezes é mais adequado indicar o primeiro termo da PA como a<sub>0</sub>, deixando o termo geral como a<sub>n</sub> = a<sub>0</sub> + nr. Perceba que a<sub>9</sub> = a<sub>6</sub> + 3r, pois para ir de a<sub>6</sub> para a<sub>9</sub> nós avançamos 3 posições. Da mesma forma para retroceder posições, utilizando valores negativos multiplicando a razão.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PROGRESSAO GEOMETRICA!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao2 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>PROGRESSÃO GEOMÉTRICA</h3>
+
+                    <p>Chama-se Progressão Geométrica (PG) a sequência de números em que cada termo, a partir do segundo, é o produto do anterior com uma constante 1. São exemplos de PGs:</p>
+                    <center>
+                        <p><b>1)</b> 1, 2, 4, 8, 16...<br><i>a<sub>1</sub> = 1 e q = 2</i></p>
+                        <p><b>2)</b> -1, -2, -4, -8, -16...<br><i>a<sub>1</sub> = -1 e q = 2</i></p>
+                        <p><b>3)</b> 1, 1/3, 1/9, 1/27, 1/81...<br><i>a<sub>1</sub> = 1 e r = 1/3</i></p>
+                    </center>
+                    <ul>
+                        <li class="lista">
+                            <b>Crescente</b>: cada termo é maior que o anterior.
+                            <ul>
+                                <li class="lista">PG com termos positivos: q > 1.</li>
+                                <li class="lista">PG com termos negativos: 1 > q > 0.</li>
+                            </ul>
+                        </li>
+                        <li class="lista">
+                            <b>Decrescente</b>: cada termo é menor que o anterior, ou seja, 0 > r.
+                            <ul>
+                                <li class="lista">PG com termos positivos: 1 > q > 0.</li>
+                                <li class="lista">PG com termos positivos: q > 1.</li>
+                            </ul>
+                        </li>
+                        <li class="lista">
+                            <b>Constante</b>: cada termo é igual ao anterior, ou seja, r = 0.
+                            <ul>
+                                <li class="lista">PG com termos nulos: a<sub>1</sub> = 0 e q qualquer.</li>
+                                <li class="lista">PG com termos iguais e não nulos: a ≠ 0 e q = 1.</li>
+                            </ul>
+                        </li>
+                        <li class="lista">
+                            <b>Alternantes</b>: cada termo tem sinal contrário ao do termo anterior. Isso ocorre quando 0 > q.
+                        </li>
+                        <li class="lista">
+                            <b>Estacionárias</b>: apenas o primeiro termo é diferente de zero.
+                        </li>
+                    </ul>
+                    
+                    <p>Numa PA de razão r, o enésimo termo é dado por:<br></p>
+                    <center>
+                        <p>a<sub>1</sub><br>a<sub>2</sub> = a<sub>1</sub> . q<br>a<sub>3</sub> = a<sub>2</sub> . q | a<sub>1</sub> . q . q | a<sub>1</sub> . q²<br>a<sub>4</sub> = a<sub>3</sub> . q | a<sub>1</sub> . q² . q | a<sub>1</sub> . q³<br>...<br><span style="font-size: 110%"><b>a<sub>n</sub> = a<sub>1</sub> . q<sup>n-1</sup></b></span></p>
+                    </center>
+                    <p>Às vezes é mais adequado indicar o primeiro termo da PA como a<sub>0</sub>, deixando o termo geral como a<sub>n</sub> = a<sub>0</sub>q<sup>n</sup>. Perceba que a<sub>9</sub> = a<sub>6</sub> . q<sup>3</sup>, pois para ir de a<sub>6</sub> para a<sub>9</sub> nós avançamos 3 posições. Da mesma forma para retroceder posições, utilizando valores negativos multiplicando a razão.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center text-center">
+        <div class="mt-3 mb-4 mx-4 col-lg-5 col-md-6 col-sm-6">
+            <h2 class="botao "><a href="cont2.html" style="color: white">VOLTAR</a></h2>
+        </div>
+        <div class="mt-3 mx-4 mb-4 col-lg-5 col-md-6 col-sm-6">
+            <h2 class="botao "><a href="cont4.html" style="color: white">PRÓXIMO</a></h2>
+        </div>
     </div>
 </body>
 <footer>

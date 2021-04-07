@@ -8,37 +8,103 @@
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div>
-        <img id="bg" src="bginicio.jpg" />
-    </div>
-    <div align=center>
-        <p id="titulo">PORTFOLIO DE MATEMÁTICA</p>
-        <img id="bgturma" src="bgturma.jpg"/>
-        <p id="turma">EMI - Técnico em Informática</p>
-        <p>Autor: Levi Gomes</p>
-        <p>Professora: Valéria Lessa</p>
-    </div>
 
+    <div class="container-fluid p-0">
+        <div class="row mt-5">
+            <div class="container">
+                <div class="col mx-auto text-center">
+                    <h2 class="titulo py-3 mt-4">PORTFOLIO DE MATEMÁTICA</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col mx-auto text-center center">
+                <div class="container">
+                    <p id="turma" class="bg-white px-2">EMI - Técnico em Informática</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col center">
+            <p align=left>Autor: <b>Levi Gomes</b> | Professora: <b>Valéria Lessa</b></p>
+        </div>
+    </div>
+    <br>
     <center>
-        <h2>ESCOLHA UM DOS CONTEÚDO:</h2>
+        <h3>ESCOLHA UM CONTEÚDO:</h3>
         <div class="cont">
-            <div class="contI">
-                <p><a href="cont1.html">cont1</a></p>
+            <div class="row">
+                <div class="contI col-sm-6 col-lg-3 col-md-6 mx-auto text-center center">
+                    <p><a href="cont1.html">
+                            <i class="fas fa-square-root-alt fa-3x bolinha"></i>
+                        </a><br></p>
+                </div>
+                <div class="contI col-sm-6 col-lg-3 col-md-6 mx-auto text-center center">
+                    <p><a href="cont2.html">
+                            <i class="fas fa-superscript fa-3x bolinha"></i>
+                        </a></p>
+                </div>
+                <div class="contI col-sm-6 col-lg-3 col-md-6 mx-auto text-center center">
+                    <p><a href="cont3.html">
+                            <i class="fas fa-chart-line fa-3x bolinha"></i>
+                        </a></p>
+                </div>
+                <div class="contI col-sm-6 col-lg-3  col-md-6 mx-auto text-center center">
+                    <p><a href="cont4.html">
+                            <i class="fas fa-dollar-sign fa-3x bolinha"></i>
+                        </a></p>
+                </div>
             </div>
-            <div class="contI">
-                <p><a href="cont2.html">cont2</a></p>
-            </div>
-            <div class="contI">
-                <p><a href="cont3.html">cont3</a></p>
-            </div>
-            <div class="contI">
-                <p><a href="cont1.html">cont4</a></p>
+        </div>
+        <div class="row center">
+            <div class="mt-3 mx-4 col-lg-10 col-md-10 col-sm-10">
+                <p>Houveram mais conteúdos que estudamos neste ciclo, porém, selecionei apenas aqueles que mais tive afinidade e achei mais divertidos. Em cada seção será possível encontrar:</p>
+                <div class="row center">
+                    <ul align="left">
+                        <li>Explicação do conteúdo;</li>
+                        <li>Aplicação em forma de exercício e</li>
+                        <li>Resolução com passo-a-passo.</li>
+                    </ul>
+                </div>
+                <p><b>Aproveite a experiência e confira se aprendi tudo corretamente!</b></p>
+                <div class="py-3 mb-3 col-lg-4 col-md-7 col-sm-10">
+                    <h2 class="botao"><a href="cont1.html" style="color: white">INICIAR TOUR</a></h2>
+                </div>
             </div>
         </div>
     </center>
+
+    <!--AUTOAVALIAÇÃO??!-->
+    <div class="row">
+        <div class="container-fluid">
+            <div class="secao1 px-4 py-3">
+                <div class=" col-lg-12">
+                    <h3>AUTOAVALIAÇÃO</h3>
+
+                    <p>Ao final, após analisar todos os conteúdos, clique no botão abaixo para ser redirecionado à página de autoavaliação. Se você não é a professora, não se preocupe, ele não possui nada essencial e imperdível, apenas minha autoavaliação mesmo.</p>
+                    <div class="cont">
+                        <div class="row">
+                            <div class="contI col-sm-6 col-lg-3 col-md-6 mx-auto text-center center">
+                                <p><a href="autoavaliacao.html">
+                                        <i class="fas fa-star fa-3x bolinha"></i>
+                                    </a><br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 <footer>
 
